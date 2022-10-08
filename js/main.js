@@ -11,6 +11,7 @@ searchBtn.addEventListener('click',()=>{
     searchBtn.classList.add('active')
     searchClose.classList.add('active')
     menuToggle.classList.add('hide')
+    header.classList.remove('open')
 })
 searchClose.addEventListener('click',()=>{
     searchBox.classList.remove('active')

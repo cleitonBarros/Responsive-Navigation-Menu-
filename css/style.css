@@ -128,7 +128,9 @@ header .search{
 }
 
 @media (max-width: 800px){
-    .serc
+    .searchBtn{
+        left: 0;
+    }
     .menuToggle{
         position: absolute;
         display: block;
@@ -142,6 +144,24 @@ header .search{
         opacity: 0;
         visibility: hidden;
         left: 100%;
+    }
+    header.open .navigation{
+        opacity: 1;
+        visibility: visible;
+        left:0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        height:calc(100vh -80px);
+        padding: 40px;
+        border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    header.open .navigation li a{
+        font-size:1.25rem;
+
+    }
+    .hide{
+        display: none;
     }
 
 }
